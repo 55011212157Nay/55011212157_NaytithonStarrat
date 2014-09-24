@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3186E2A8-EBB3-411C-8D1D-28630C9E139A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IOS8SwiftPrototypeCellsTutorial</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A8DC2EC91B645D9CD28B22F8D6323D45A7ECE19C</key>
+		<string>https://github.com/55011212157Nay/55011212157_NaytithonStarrat.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IOS8SwiftPrototypeCellsTutorial/IOS8SwiftPrototypeCellsTutorial.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A8DC2EC91B645D9CD28B22F8D6323D45A7ECE19C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/55011212157Nay/55011212157_NaytithonStarrat.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A8DC2EC91B645D9CD28B22F8D6323D45A7ECE19C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A8DC2EC91B645D9CD28B22F8D6323D45A7ECE19C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>55011212157_NaytithonStarrat</string>
+		</dict>
+	</array>
+</dict>
+</plist>
