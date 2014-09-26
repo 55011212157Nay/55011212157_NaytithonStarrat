@@ -53,10 +53,17 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="182" y="90" width="118" height="30"/>
                                 </variation>
-                                <connections>
-                                    <action selector="CalculateTapped:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="hQw-SO-qPo"/>
-                                </connections>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phc-fy-FI1">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="29" y="233" width="264" height="128"/>
+                                </variation>
+                            </textView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="OQQ-lT-v36">
                                 <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -66,17 +73,6 @@
                                     <action selector="taxPercentageChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="54l-O7-H9I"/>
                                 </connections>
                             </slider>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gOL-JH-kg4">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="15" y="222" width="289" height="321"/>
-                                </variation>
-                                <connections>
-                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="15m-ie-T7o"/>
-                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="blQ-b9-jJa"/>
-                                </connections>
-                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -84,16 +80,16 @@
                             <mask key="subviews">
                                 <exclude reference="Hlo-tj-ejy"/>
                                 <exclude reference="MF2-ef-86s"/>
+                                <exclude reference="phc-fy-FI1"/>
                                 <exclude reference="OQQ-lT-v36"/>
-                                <exclude reference="gOL-JH-kg4"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Hlo-tj-ejy"/>
                                 <include reference="MF2-ef-86s"/>
+                                <include reference="phc-fy-FI1"/>
                                 <include reference="OQQ-lT-v36"/>
-                                <include reference="gOL-JH-kg4"/>
                             </mask>
                         </variation>
                         <connections>
@@ -104,7 +100,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="Tabletext" destination="gOL-JH-kg4" id="h8l-iP-SWp"/>
+                        <outlet property="resultsTextView" destination="phc-fy-FI1" id="GwW-Qb-szP"/>
                         <outlet property="taxPctLabel" destination="QEA-VH-msy" id="8Gh-HW-0dR"/>
                         <outlet property="taxPctSlider" destination="OQQ-lT-v36" id="iop-4Q-xtB"/>
                         <outlet property="totalTextField" destination="MF2-ef-86s" id="Hdo-ma-KJP"/>
