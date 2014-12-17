@@ -22,7 +22,7 @@
                                     <navigationItem title="Title" id="Z9t-h7-Rgb">
                                         <barButtonItem key="rightBarButtonItem" title="Color" id="3LX-Tg-rVg">
                                             <connections>
-                                                <segue destination="1vi-pP-Cwb" kind="show" identifier="mysegue" id="s9F-jT-mEc"/>
+                                                <segue destination="1vi-pP-Cwb" kind="show" identifier="mySegue" id="s9F-jT-mEc"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -70,7 +70,7 @@
                                     <navigationItem title="Title" id="D5g-BL-8vx">
                                         <barButtonItem key="rightBarButtonItem" title="Save" id="8nQ-HN-csi">
                                             <connections>
-                                                <action selector="saveColor:" destination="1vi-pP-Cwb" id="HJM-FM-ZiY"/>
+                                                <action selector="saveColor:" destination="1vi-pP-Cwb" id="dv0-zk-L0x"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -79,6 +79,15 @@
                                     <rect key="frame" x="0.0" y="65" width="320" height="44"/>
                                 </variation>
                             </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWE-4J-X8w">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="139" y="278" width="42" height="21"/>
+                                </variation>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXI-HK-ELx">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Blue">
@@ -87,6 +96,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="248" y="149" width="31" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="colorSelectionButton:" destination="1vi-pP-Cwb" eventType="touchUpInside" id="lHx-ML-5Fy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLs-p3-lo2">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -98,18 +110,9 @@
                                     <rect key="frame" x="139" y="149" width="42" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="colorSelectionButton:" destination="1vi-pP-Cwb" eventType="touchUpInside" id="aL5-Cc-pX3"/>
+                                    <action selector="colorSelectionButton:" destination="1vi-pP-Cwb" eventType="touchUpInside" id="gUm-7b-ny4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWE-4J-X8w">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="139" y="278" width="42" height="21"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzB-f3-lbJ">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Red">
@@ -119,24 +122,27 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="42" y="149" width="30" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="colorSelectionButton:" destination="1vi-pP-Cwb" eventType="touchUpInside" id="4xl-OF-zsc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="PCm-7a-KEs"/>
+                                <exclude reference="VWE-4J-X8w"/>
                                 <exclude reference="dXI-HK-ELx"/>
                                 <exclude reference="gLs-p3-lo2"/>
-                                <exclude reference="VWE-4J-X8w"/>
                                 <exclude reference="KzB-f3-lbJ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="PCm-7a-KEs"/>
+                                <include reference="VWE-4J-X8w"/>
                                 <include reference="dXI-HK-ELx"/>
                                 <include reference="gLs-p3-lo2"/>
-                                <include reference="VWE-4J-X8w"/>
                                 <include reference="KzB-f3-lbJ"/>
                             </mask>
                         </variation>
@@ -152,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ad-Vz-F7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1230" y="1677"/>
+            <point key="canvasLocation" x="1230" y="1612"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="K2i-Ea-jcH">
@@ -175,7 +181,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Teu-Oz-066" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="346" y="941"/>
+            <point key="canvasLocation" x="666" y="941"/>
         </scene>
     </scenes>
 </document>
